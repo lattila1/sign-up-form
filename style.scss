@@ -7,6 +7,48 @@ body {
   color: $primary;
 }
 
+main {
+  margin-top: 6rem;
+  padding: 0 2rem;
+
+  div {
+    margin: 0 auto 1rem auto;
+    max-width: 40rem;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: right;
+    margin-bottom: 1rem;
+
+    @media (min-width: 992px) {
+      text-align: center;
+    }
+  }
+
+  input {
+    padding: 1rem;
+    width: 100%;
+
+    &::placeholder {
+      color: $primary;
+    }
+  }
+
+  a {
+    color: $primary;
+  }
+
+  button {
+    background: $primary;
+    border: 1px solid $secondary;
+    color: $secondary;
+    letter-spacing: 0.2rem;
+    padding: 1.5rem 6rem;
+    text-transform: uppercase;
+  }
+}
+
 #navigation {
   position: absolute;
   top: 1rem;
