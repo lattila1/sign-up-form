@@ -6,3 +6,47 @@ body {
   background: $background;
   color: $primary;
 }
+
+#navigation {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#hamburger-container {
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  #hamburger {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    background: $primary;
+
+    @media (min-width: 992px) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    svg {
+      color: $secondary;
+      stroke: $secondary;
+      stroke-width: 1;
+      width: 100%;
+    }
+  }
+}
+
+#navbarNavAltMarkup {
+  .navbar-nav {
+    width: 240px;
+    background: $secondary;
+    border-radius: 0.5rem;
+    padding: 0 2rem;
+    margin: 1rem;
+  }
+}
