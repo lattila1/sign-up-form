@@ -18,6 +18,8 @@ main {
   }
 
   h1 {
+    font-family: serif;
+    font-weight: bold;
     text-align: right;
     margin-bottom: 1rem;
 
@@ -26,13 +28,19 @@ main {
     }
   }
 
-  input {
+  input:not([type="checkbox"]) {
     padding: 1rem;
     width: 100%;
 
     &::placeholder {
       color: $primary;
     }
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
   }
 
   a {
