@@ -1,0 +1,117 @@
+body {
+  background: #fbb03b;
+  color: #138073;
+}
+
+main {
+  margin-top: 6rem;
+  padding: 0 2rem;
+}
+
+main div {
+  margin: 0 auto 1rem auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+main h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  main h1 {
+    text-align: center;
+  }
+}
+
+main input:not([type="checkbox"]) {
+  padding: 1rem;
+  width: 100%;
+}
+
+main input:not([type="checkbox"])::-webkit-input-placeholder {
+  color: #138073;
+}
+
+main input:not([type="checkbox"]):-ms-input-placeholder {
+  color: #138073;
+}
+
+main input:not([type="checkbox"])::-ms-input-placeholder {
+  color: #138073;
+}
+
+main input:not([type="checkbox"])::placeholder {
+  color: #138073;
+}
+
+main input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+}
+
+main a {
+  color: #138073;
+}
+
+main button {
+  background: #138073;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 6rem;
+  text-transform: uppercase;
+}
+
+#navigation {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#hamburger-container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#hamburger-container #hamburger {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  background: #138073;
+}
+
+@media (min-width: 992px) {
+  #hamburger-container #hamburger {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+#hamburger-container #hamburger:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#hamburger-container #hamburger svg {
+  color: #ffffff;
+  stroke: #ffffff;
+  stroke-width: 1;
+  width: 100%;
+}
+
+#navbarNavAltMarkup .navbar-nav {
+  width: 240px;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  margin: 1rem;
+}
